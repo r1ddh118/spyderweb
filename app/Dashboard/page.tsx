@@ -20,14 +20,14 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
+    title: "Track Progress",
+    description: "See how far you've come and how far you have to go.",
     header: <Skeleton />,
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
+    title: "View Leaderboard",
+    description: "Compete with others and see where you stand.",
     header: <Skeleton />,
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
@@ -68,8 +68,8 @@ export default function BentoGridDemo() {
   return (
     <div>
       <NavbarMain/>
-    <div className="p-4">
-      <h1 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100">
+    <div className="p-8">
+      <h1 className="text-4xl font-bold text-neutral-900 dark:text-neutral-100">
         Dashboard
       </h1>
       <p className="text-neutral-600 dark:text-neutral-300">
