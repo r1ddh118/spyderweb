@@ -9,14 +9,14 @@ import React from "react";
 export default function BackgroundBeamsDemo() {
   return (
     <div>
-    <Navbar isBordered>
+    <Navbar isBordered className="p-2 px-4">
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle aria-label="Open menu" />
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center"> 
       <NavbarBrand>
           <AcmeLogo />
-          <Link className="font-bold text-inherit" href="/Dashboard">SpyderWeb</Link>
+          <Link className="font-bold text-inherit" href="/">SpyderWeb</Link>
         </NavbarBrand>
       </NavbarContent>
 
