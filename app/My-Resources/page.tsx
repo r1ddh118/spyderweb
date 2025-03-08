@@ -5,6 +5,17 @@ import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import NavbarMain from "@/components/Navbar";
 
+import { FileUpload } from "@/components/ui/file-upload";
+ 
+  const [files, setFiles] = useState<File[]>([]);
+  const handleFileUpload = (files: File[]) => {
+    setFiles(files);
+    console.log(files);
+  };
+
+
+
+
 export const CloseIcon = () => {
     return (
       <motion.svg
@@ -264,6 +275,7 @@ export default function ExpandableCardDemo() {
       </div>
       </div>
 
+<FileUpload onFileUpload={handleFileUpload} files={files} />
 
       </div>
     </>
