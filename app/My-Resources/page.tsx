@@ -6,12 +6,6 @@ import { useOutsideClick } from "@/hooks/use-outside-click";
 import NavbarMain from "@/components/Navbar";
 
 import { FileUpload } from "@/components/ui/file-upload";
- 
-  const [files, setFiles] = useState<File[]>([]);
-  const handleFileUpload = (files: File[]) => {
-    setFiles(files);
-    console.log(files);
-  };
 
 
 
@@ -104,6 +98,12 @@ export default function ExpandableCardDemo() {
   const ref = useRef<HTMLDivElement>(null);
   const id = useId();
 
+  const [files, setFiles] = useState<File[]>([]);
+  const handleFileUpload = (files: File[]) => {
+    setFiles(files);
+    console.log(files);
+  };
+
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
@@ -135,7 +135,12 @@ export default function ExpandableCardDemo() {
       Course Content
       </h1>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6">
-
+    <div className="p-6 border-1 rounded-xl" >
+      <h1 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
+      Upload your files(Images, Videos, PDFs)
+      </h1>
+      <FileUpload onChange={handleFileUpload} />
+    </div>
       <div className="p-6 border-1 rounded-xl" >
       <AnimatePresence>
         {active && typeof active === "object" && (
@@ -274,8 +279,6 @@ export default function ExpandableCardDemo() {
       </ul>
       </div>
       </div>
-
-<FileUpload onFileUpload={handleFileUpload} files={files} />
 
       </div>
     </>
