@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Navbar,
@@ -77,7 +78,7 @@ export default function NavbarMain() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/Leaderboard">
             Leaderboard
           </Link>
         </NavbarItem>
