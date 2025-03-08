@@ -84,7 +84,7 @@ export default function NavbarMain() {
         </NavbarItem>
 
         <NavbarItem>
-          <Link color="foreground" href="/About">
+          <Link color="foreground" href="/Track-Progress">
             Track Progress
           </Link>
           </NavbarItem>
