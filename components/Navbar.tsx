@@ -53,10 +53,11 @@ export default function NavbarMain() {
         </NavbarBrand>
       </NavbarContent>
 
+
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
           <AcmeLogo />
-          <Link className="font-bold text-inherit" href="/Dashboard">SpyderWeb</Link>
+          <Link className="font-bold text-inherit" href="/">SpyderWeb</Link>
          </NavbarBrand>
         <NavbarItem>
           <Link color="foreground" href="/Courses">
