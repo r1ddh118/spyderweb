@@ -13,6 +13,7 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 import NavbarMain from "@/components/Navbar";
+import { title } from "process";
 
 
 const Skeleton = () => (
@@ -32,36 +33,23 @@ const items = [
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
+    title: "Prepare for Quizzes",
+    description: "Get ready to test your knowledge and skills.",
     header: <Skeleton />,
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Power of Communication",
-    description:
-      "Understand the impact of effective communication in our lives.",
+    title: "My Resources",
+    description: "Access all your resources in one place.",
     header: <Skeleton />,
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Pursuit of Knowledge",
-    description: "Join the quest for understanding and enlightenment.",
+    title: "Manage Profile",
+    description: "Update your profile and preferences.",
     header: <Skeleton />,
-    icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Joy of Creation",
-    description: "Experience the thrill of bringing ideas to life.",
-    header: <Skeleton />,
-    icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Spirit of Adventure",
-    description: "Embark on exciting journeys and thrilling discoveries.",
-    header: <Skeleton />,
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
-  },
+    icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />, 
+  }
 ];
 
 export default function BentoGridDemo() {
