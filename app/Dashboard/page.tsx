@@ -68,7 +68,15 @@ export default function BentoGridDemo() {
   return (
     <div>
       <NavbarMain/>
-    <BentoGrid className="max-w-4xl mx-auto">
+    <div className="p-4">
+      <h1 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100">
+        Bento Grid
+      </h1>
+      <p className="text-neutral-600 dark:text-neutral-300">
+        A responsive grid layout for showcasing content in a clean and organized
+        manner.
+      </p>
+    <BentoGrid className="max-w-4xl mx-auto p-8">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -80,6 +88,7 @@ export default function BentoGridDemo() {
         />
       ))}
     </BentoGrid>
+    </div>
     </div>
   );
 }
