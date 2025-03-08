@@ -13,7 +13,7 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 import NavbarMain from "@/components/Navbar";
-import { title } from "process";
+import Link from "next/link";
 
 
 const Skeleton = () => (
@@ -25,30 +25,35 @@ const items = [
     description: "See how far you've come and how far you have to go.",
     header: <Skeleton />,
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    link: "/Track-Progress"
   },
   {
     title: "View Leaderboard",
     description: "Compete with others and see where you stand.",
     header: <Skeleton />,
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    link: "/Leaderboard"
   },
   {
     title: "Prepare for Quizzes",
     description: "Get ready to test your knowledge and skills.",
     header: <Skeleton />,
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    link: "/Quiz"
   },
   {
     title: "My Resources",
     description: "Access all your resources in one place.",
     header: <Skeleton />,
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    link: "/My-Resources"
   },
   {
     title: "Manage Profile",
     description: "Update your profile and preferences.",
     header: <Skeleton />,
-    icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />, 
+    icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
+    link: "/Track-Progress" 
   }
 ];
 
@@ -66,6 +71,7 @@ export default function BentoGridDemo() {
       </p>
     <BentoGrid className="max-w-4xl mx-auto p-8">
       {items.map((item, i) => (
+        <Link href={item.link}>
         <BentoGridItem
           key={i}
           title={item.title}
@@ -73,7 +79,9 @@ export default function BentoGridDemo() {
           header={item.header}
           icon={item.icon}
           className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+          
         />
+        </Link>
       ))}
     </BentoGrid>
     </div>
