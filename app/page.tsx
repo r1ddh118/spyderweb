@@ -10,10 +10,8 @@ export default function BackgroundBeamsDemo() {
           Welcome to SpyderWeb
         </h1>
         <p></p>
-        <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center relative z-10">
-          SpyderWeb is a collection of tools and resources to help you build your
-          next project. We have a wide range of tools to help you build your
-          project, from design to development.
+        <p className="text-neutral-500 max-w-lg mx-auto my-2 text-md text-center relative z-10">
+          SpyderWeb is a educational platform which learns on what you want to. just provide us the resources and we will provide you the best learning experience.
         </p>
       </div>
       <BackgroundBeams />
