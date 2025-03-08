@@ -59,8 +59,8 @@ export default function NavbarMain() {
           <p className="font-bold text-inherit">SpyderWeb</p>
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Features
+          <Link color="foreground" href="/Courses">
+            Courses
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
