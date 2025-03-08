@@ -70,7 +70,7 @@ export default function BentoGridDemo() {
       <NavbarMain/>
     <div className="p-4">
       <h1 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100">
-        Bento Grid
+        Dashboard
       </h1>
       <p className="text-neutral-600 dark:text-neutral-300">
         A responsive grid layout for showcasing content in a clean and organized
