@@ -4,6 +4,92 @@ import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 
+
+
+export const CloseIcon = () => {
+    return (
+      <motion.svg
+        initial={{
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 1,
+        }}
+        exit={{
+          opacity: 0,
+          transition: {
+            duration: 0.05,
+          },
+        }}
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="h-4 w-4 text-black"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M18 6l-12 12" />
+        <path d="M6 6l12 12" />
+      </motion.svg>
+    );
+  };
+  
+  const cards = [
+    {
+      description: "Lana Del Rey",
+      title: "Summertime Sadness",
+      src: "vercel.svg",
+      ctaText: "Play",
+      ctaLink: "https://ui.aceternity.com/templates",
+      content: () => {
+        return (
+          <p>
+            Lana Del Rey, an iconic American singer-songwriter, is celebrated for
+            her melancholic and cinematic music style. Born Elizabeth Woolridge
+            Grant in New York City, she has captivated audiences worldwide with
+            her haunting voice and introspective lyrics. <br /> <br /> Her songs
+            often explore themes of tragic romance, glamour, and melancholia,
+            drawing inspiration from both contemporary and vintage pop culture.
+            With a career that has seen numerous critically acclaimed albums, Lana
+            Del Rey has established herself as a unique and influential figure in
+            the music industry, earning a dedicated fan base and numerous
+            accolades.
+          </p>
+        );
+      },
+    },
+    {
+      description: "Metallica",
+      title: "For Whom The Bell Tolls",
+      src: "vercel.svg",
+      ctaText: "Play",
+      ctaLink: "https://ui.aceternity.com/templates",
+      content: () => {
+        return (
+          <p>
+            Metallica, an iconic American heavy metal band, is renowned for their
+            powerful sound and intense performances that resonate deeply with
+            their audience. Formed in Los Angeles, California, they have become a
+            cultural icon in the heavy metal music industry. <br /> <br /> Their
+            songs often reflect themes of aggression, social issues, and personal
+            struggles, capturing the essence of the heavy metal genre. With a
+            career spanning over four decades, Metallica has released numerous hit
+            albums and singles that have garnered them a massive fan following
+            both in the United States and abroad.
+          </p>
+        );
+      },
+    }
+  ];
+
+
+
+
 export default function ExpandableCardDemo() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
     null
