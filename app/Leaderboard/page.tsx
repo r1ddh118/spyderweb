@@ -17,7 +17,7 @@ export default function Leaderboard() {
                 <div className="bg-gray-900 shadow-md rounded-lg p-6">
                     <table className="w-full text-left border-collapse">
                         <thead>
-                            <tr className="bg-blue-500 text-white">
+                            <tr className="border-b text-white">
                                 <th className="p-3">Rank</th>
                                 <th className="p-3">Name</th>
                                 <th className="p-3">Score</th>
