@@ -4,8 +4,6 @@ import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 
-
-
 export const CloseIcon = () => {
     return (
       <motion.svg
@@ -86,9 +84,6 @@ export const CloseIcon = () => {
       },
     }
   ];
-
-
-
 
 export default function ExpandableCardDemo() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
