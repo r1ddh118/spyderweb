@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import NavbarMain from "@/components/Navbar";
 
 export const CloseIcon = () => {
     return (
@@ -115,6 +116,15 @@ export default function ExpandableCardDemo() {
 
   return (
     <>
+    <NavbarMain/>
+    
+    <div className="p-12">
+
+    <h1 className="text-4xl font-bold text-neutral-900 dark:text-neutral-100">
+      Course Content
+      </h1>
+
+      <div className="pt-8">
       <AnimatePresence>
         {active && typeof active === "object" && (
           <motion.div
@@ -250,6 +260,8 @@ export default function ExpandableCardDemo() {
           </motion.div>
         ))}
       </ul>
+      </div>
+      </div>
     </>
   );
 }
