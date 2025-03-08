@@ -68,7 +68,7 @@ export default function NavbarMain() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/Courses">
+          <Link color="foreground" href="/My-Resources">
             My Resources
           </Link>
         </NavbarItem>
