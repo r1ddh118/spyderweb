@@ -7,9 +7,6 @@ import NavbarMain from "@/components/Navbar";
 
 import { FileUpload } from "@/components/ui/file-upload";
 
-
-
-
 export const CloseIcon = () => {
     return (
       <motion.svg
