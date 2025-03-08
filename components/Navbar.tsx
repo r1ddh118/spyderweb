@@ -69,7 +69,7 @@ export default function NavbarMain() {
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="/Courses">
-            My Courses
+            My Resources
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
