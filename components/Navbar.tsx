@@ -73,7 +73,7 @@ export default function NavbarMain() {
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link aria-current="page" href="#">
+          <Link aria-current="page" href="/Quiz">
             Quiz
           </Link>
         </NavbarItem>
@@ -82,6 +82,12 @@ export default function NavbarMain() {
             Leaderboard
           </Link>
         </NavbarItem>
+
+        <NavbarItem>
+          <Link color="foreground" href="/About">
+            Track Progress
+          </Link>
+          </NavbarItem>
 
       </NavbarContent>
 
