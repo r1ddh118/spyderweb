@@ -24,7 +24,7 @@ export const AcmeLogo = () => {
   );
 };
 
-export default function App() {
+export default function NavbarMain() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
