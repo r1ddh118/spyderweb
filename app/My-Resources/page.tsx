@@ -123,9 +123,9 @@ export default function ExpandableCardDemo() {
     <h1 className="text-4xl font-bold text-neutral-900 dark:text-neutral-100">
       Course Content
       </h1>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6">
 
-      <div className="pt-8 border-0.1 rounded-xl" >
+      <div className="p-6 border-1 rounded-xl" >
       <AnimatePresence>
         {active && typeof active === "object" && (
           <motion.div
