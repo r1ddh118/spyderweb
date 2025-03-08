@@ -17,11 +17,6 @@ export default function BackgroundBeamsDemo() {
           password reset emails, or promotional campaigns, MailJet has got you
           covered.
         </p>
-        <input
-          type="text"
-          placeholder="hi@manuarora.in"
-          className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
-        />
       </div>
       <BackgroundBeams />
     </div>
