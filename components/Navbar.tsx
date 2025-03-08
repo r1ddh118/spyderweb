@@ -49,7 +49,7 @@ export default function NavbarMain() {
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
           <AcmeLogo />
-          <p className="font-bold text-inherit">SpyderWeb-edu</p>
+          <p className="font-bold text-inherit">SpyderWeb</p>
         </NavbarBrand>
       </NavbarContent>
 
@@ -68,6 +68,12 @@ export default function NavbarMain() {
             Quiz
           </Link>
         </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            Leaderboard
+          </Link>
+        </NavbarItem>
+
         <NavbarItem>
           <Link color="foreground" href="#">
             Leaderboard
