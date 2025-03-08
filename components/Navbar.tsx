@@ -41,7 +41,7 @@ export default function NavbarMain() {
   ];
 
   return (
-    <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
+    <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} className="p-2 px-4">
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
       </NavbarContent>
@@ -59,6 +59,13 @@ export default function NavbarMain() {
           <AcmeLogo />
           <Link className="font-bold text-inherit" href="/">SpyderWeb</Link>
          </NavbarBrand>
+
+
+        <NavbarItem>
+          <Link color="foreground" href="/Dashboard">
+            Dashboard
+          </Link>
+        </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="/Courses">
             My Courses
@@ -75,11 +82,6 @@ export default function NavbarMain() {
           </Link>
         </NavbarItem>
 
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Leaderboard
-          </Link>
-        </NavbarItem>
       </NavbarContent>
 
       <NavbarContent justify="end">
